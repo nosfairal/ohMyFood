@@ -1,0 +1,16 @@
+@media screen and (min-width: 769px) {
+
+
+    .restaurants_container {
+        flex-direction: initial !important;
+        justify-content: space-around;
+
+        .restaurants_menu {
+            width: 25%;
+
+            img {
+                height: 200px !important;
+            }
+        }
+    }
+}

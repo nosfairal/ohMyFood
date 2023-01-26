@@ -1,0 +1,87 @@
+@import "variables.scss";
+@import "keyframes.scss";
+
+
+// LOADING
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #9356dc;
+    z-index: 1;
+    opacity: 1;
+    animation: loader 1.5s forwards linear;
+
+    h2 {
+        text-align: center;
+        color: white;
+        position: relative;
+        top: 15%;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+}
+
+// SPINNER
+
+.loader_spinner {
+    border-bottom: 2px solid #ff79da;
+    border-right: 2px solid #ff79da;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: 25%;
+    margin: auto;
+    animation: spin 3s;
+    opacity: 0;
+}
+
+// MENU TRANSITION
+
+.food_menu__items {
+    animation: menu 1.5s;
+
+    .food_menu__check {
+        transition: 1.5s;
+        width: 0;
+    }
+
+    .food_menu__price {
+        padding-right: 0;
+        transition: 1.5s;
+    }
+
+    &:hover {
+
+        .food_menu__check {
+            width: 70px;
+
+            i {
+                animation: rotate 1.5s;
+            }
+        }
+
+        .food_menu__price {
+            padding-right: 45px;
+        }
+    }
+}
+
+// HEART
+
+.food_menu__title,
+.restaurants {
+    .fa-solid {
+        opacity: 0;
+
+        &:hover {
+            transition: 0.5s;
+            opacity: 1;
+            background: $color-gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
