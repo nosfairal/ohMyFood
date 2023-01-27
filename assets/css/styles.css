@@ -2,25 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;700;900&display=swap");
-
 @-webkit-keyframes loader {
   35% {
     opacity: 1;
     z-index: 10;
   }
-
   100% {
     opacity: 0;
     z-index: -1;
   }
 }
-
 @keyframes loader {
   35% {
     opacity: 1;
     z-index: 10;
   }
-
   100% {
     opacity: 0;
     z-index: -1;
@@ -31,10 +27,9 @@
   0% {
     opacity: 1;
   }
-
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
     opacity: 0;
   }
 }
@@ -43,10 +38,9 @@
   0% {
     opacity: 1;
   }
-
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
     opacity: 0;
   }
 }
@@ -55,13 +49,12 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+            transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -69,27 +62,26 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+            transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @-webkit-keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -101,7 +93,7 @@
   z-index: 1;
   opacity: 1;
   -webkit-animation: loader 1.5s forwards linear;
-  animation: loader 1.5s forwards linear;
+          animation: loader 1.5s forwards linear;
 }
 
 .loader h2 {
@@ -123,13 +115,13 @@
   top: 25%;
   margin: auto;
   -webkit-animation: spin 3s;
-  animation: spin 3s;
+          animation: spin 3s;
   opacity: 0;
 }
 
 .food_menu__items {
   -webkit-animation: menu 1.5s;
-  animation: menu 1.5s;
+          animation: menu 1.5s;
 }
 
 .food_menu__items .food_menu__check {
@@ -150,7 +142,7 @@
 
 .food_menu__items:hover .food_menu__check i {
   -webkit-animation: rotate 1.5s;
-  animation: rotate 1.5s;
+          animation: rotate 1.5s;
 }
 
 .food_menu__items:hover .food_menu__price {
@@ -177,16 +169,14 @@
   .restaurants_container {
     -webkit-box-orient: initial !important;
     -webkit-box-direction: initial !important;
-    -ms-flex-direction: initial !important;
-    flex-direction: initial !important;
+        -ms-flex-direction: initial !important;
+            flex-direction: initial !important;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
-
   .restaurants_container .restaurants_menu {
     width: 25%;
   }
-
   .restaurants_container .restaurants_menu img {
     height: 200px !important;
   }
@@ -202,12 +192,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 20px;
   padding-bottom: 10px;
   -webkit-box-shadow: 5px 5px 10px lightgray;
-  box-shadow: 5px 5px 10px lightgray;
+          box-shadow: 5px 5px 10px lightgray;
   margin-bottom: 4px;
 }
 
@@ -222,8 +212,8 @@ header #logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px 0;
   background-color: #eaeaea;
 }
@@ -232,14 +222,18 @@ header #logo {
   margin-right: 20px;
 }
 
+.location .location--row {
+  display: inline-block;
+}
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   text-align: center;
   padding: 0 40px;
   background: #f7f7f7;
@@ -262,8 +256,8 @@ header #logo {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356DC));
   background: linear-gradient(180deg, #ff79da, #9356DC);
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-decoration: none;
   color: white;
   font-size: 20px;
@@ -271,7 +265,7 @@ header #logo {
   width: 250px;
   padding: 15px 10px;
   -webkit-box-shadow: 5px 5px 10px lightgray;
-  box-shadow: 5px 5px 10px lightgray;
+          box-shadow: 5px 5px 10px lightgray;
   margin-bottom: 60px;
   cursor: pointer;
 }
@@ -297,7 +291,7 @@ header #logo {
   background: #f7f7f7;
   margin: 20px 0;
   -webkit-box-shadow: 5px 5px 10px lightgray;
-  box-shadow: 5px 5px 10px lightgray;
+          box-shadow: 5px 5px 10px lightgray;
   border-radius: 30px;
 }
 
@@ -339,8 +333,8 @@ header #logo {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .restaurants .restaurants_title {
@@ -356,8 +350,8 @@ header #logo {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .restaurants .restaurants_container .restaurants_menu {
@@ -367,7 +361,7 @@ header #logo {
   background: white;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-shadow: 5px 5px 10px lightgray;
-  box-shadow: 5px 5px 10px lightgray;
+          box-shadow: 5px 5px 10px lightgray;
   position: relative;
 }
 
@@ -375,7 +369,7 @@ header #logo {
   height: 140px;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
@@ -444,5 +438,4 @@ header #logo {
 .footer_menu i {
   margin-right: 8px;
 }
-
 /*# sourceMappingURL=styles.css.map */

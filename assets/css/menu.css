@@ -2,25 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;700;900&display=swap");
-
 @-webkit-keyframes loader {
   35% {
     opacity: 1;
     z-index: 10;
   }
-
   100% {
     opacity: 0;
     z-index: -1;
   }
 }
-
 @keyframes loader {
   35% {
     opacity: 1;
     z-index: 10;
   }
-
   100% {
     opacity: 0;
     z-index: -1;
@@ -31,10 +27,9 @@
   0% {
     opacity: 1;
   }
-
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
     opacity: 0;
   }
 }
@@ -43,10 +38,9 @@
   0% {
     opacity: 1;
   }
-
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
     opacity: 0;
   }
 }
@@ -55,13 +49,12 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+            transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -69,27 +62,26 @@
   0% {
     opacity: 0;
     -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+            transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @-webkit-keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -101,7 +93,7 @@
   z-index: 1;
   opacity: 1;
   -webkit-animation: loader 1.5s forwards linear;
-  animation: loader 1.5s forwards linear;
+          animation: loader 1.5s forwards linear;
 }
 
 .loader h2 {
@@ -123,13 +115,13 @@
   top: 25%;
   margin: auto;
   -webkit-animation: spin 3s;
-  animation: spin 3s;
+          animation: spin 3s;
   opacity: 0;
 }
 
 .food_menu__items {
   -webkit-animation: menu 1.5s;
-  animation: menu 1.5s;
+          animation: menu 1.5s;
 }
 
 .food_menu__items .food_menu__check {
@@ -150,7 +142,7 @@
 
 .food_menu__items:hover .food_menu__check i {
   -webkit-animation: rotate 1.5s;
-  animation: rotate 1.5s;
+          animation: rotate 1.5s;
 }
 
 .food_menu__items:hover .food_menu__price {
@@ -203,7 +195,7 @@ body {
 .nav_menu__img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: 280px;
 }
 
@@ -220,11 +212,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 30px 10px 0 0;
 }
 
@@ -257,7 +249,7 @@ section .food_menu__border {
 section .food_menu__items {
   background-color: white;
   -webkit-box-shadow: 5px 5px 10px lightgray;
-  box-shadow: 5px 5px 10px lightgray;
+          box-shadow: 5px 5px 10px lightgray;
   border-radius: 15px;
   padding: 15px 12px;
   margin-bottom: 20px;
@@ -281,8 +273,8 @@ section .food_menu__items .food_menu__price_section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section .food_menu__items .food_menu__price_section .food_menu__price {
@@ -363,5 +355,4 @@ section .food_menu__items .food_menu__check i {
 .footer_menu i {
   margin-right: 8px;
 }
-
 /*# sourceMappingURL=menu.css.map */
