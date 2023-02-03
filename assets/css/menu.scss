@@ -77,6 +77,21 @@ section {
         margin-bottom: 15px;
     }
 
+    .food_menu__name {
+        width: 80%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .food_menu__items:hover .food_menu__check {
+        width: 70px;
+    }
+
+    .food_menu__items:hover .food_menu__name {
+        width: calc(100% - 70px);
+    }
+
     .food_menu__items {
         background-color: white;
         box-shadow: $shadow;
@@ -93,6 +108,7 @@ section {
             text-overflow: ellipsis;
             white-space: nowrap;
             margin: 0;
+            width: 100%;
         }
 
         .food_menu__price_section {

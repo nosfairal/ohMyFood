@@ -161,7 +161,7 @@
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(180deg, #ff79da, #9356dc);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -246,6 +246,21 @@ section .food_menu__border {
   margin-bottom: 15px;
 }
 
+section .food_menu__name {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+section .food_menu__items:hover .food_menu__check {
+  width: 70px;
+}
+
+section .food_menu__items:hover .food_menu__name {
+  width: calc(100% - 70px);
+}
+
 section .food_menu__items {
   background-color: white;
   -webkit-box-shadow: 5px 5px 10px lightgray;
@@ -264,6 +279,7 @@ section .food_menu__items .food_menu__name {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0;
+  width: 100%;
 }
 
 section .food_menu__items .food_menu__price_section {
